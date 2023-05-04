@@ -40,7 +40,7 @@ function twoSum(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     const match = target - nums[i];
     if (match in obj) return [i, obj[match]];
-    obj[nums[i] - i];
+    obj[nums[i]] = i;
   }
 }
 // الحل : https://www.youtube.com/watch?v=H7g3zHTk1G0
